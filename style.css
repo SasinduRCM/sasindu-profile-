@@ -196,11 +196,11 @@ nav a.active {
 }
 
 /* Black and white images that turn colorful on hover */
-.skill-box img, .card img {
+.skill-box img {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
-.skill-box img:hover, .card img:hover {
+.skill-box img:hover {
   filter: grayscale(0%);
 }
 
