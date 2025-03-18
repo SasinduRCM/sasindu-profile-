@@ -35,6 +35,10 @@ body {
   font-weight: bold;
 }
 
+.chat-main {
+  background-color: #000;
+}
+
 .tidio-chat-status {
   display: none !important;
 }
@@ -101,6 +105,104 @@ body {
   background-color: #555555 !important;
 }
 
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .extra-nav {
+    display: none;
+  }
+  .hero .content {
+    text-align: center;
+  }
+  .hero svg text {
+    font-size: 88px; /* Increase font size for mobile view */
+  }
+  .about .about-me {
+    flex-direction: column;
+  }
+  .about .profile, .about .description {
+    width: 100%;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .contact-form .input {
+    flex-direction: column;
+  }
+  .contact-form .input input {
+    margin-bottom: 10px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Highlight active link */
+nav a.active {
+  color: #ff6347;
+}
+
+/* Flexbox for better layout */
+.about .about-me {
+  display: flex;
+  justify-content: space-between;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact-form .input {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Add transitions */
+.nav-link, .button, .card, .skill-box, .social-media {
+  transition: all 0.3s ease;
+}
+.nav-link:hover, .button:hover, .card:hover, .skill-box:hover, .social-media:hover {
+  transform: scale(1.05);
+}
+.nav-link, .button, .card, .skill-box, .social-media {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav-link:hover, .button:hover, .card:hover, .skill-box:hover, .social-media:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer adjustments */
+.link-container > div {
+  width: 25%; /* Adjust width of subjects */
+}
+
+/* Black and white images that turn colorful on hover */
+.skill-box img, .card img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.skill-box img:hover, .card img:hover {
+  filter: grayscale(0%);
+}
 
 header {
   position: fixed;
