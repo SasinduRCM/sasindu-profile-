@@ -144,6 +144,21 @@ body {
   .contact-form .input input {
     margin-bottom: 10px;
   }
+  .about .container .content .about-me .profile .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #191919;
+    border-radius: 16px;
+    width: 100%; /* Adjust width to 100% */
+    height: auto; /* Adjust height to auto */
+    gap: 20px;
+  }
+  .about .container .content .about-me .profile .image-box img {
+    width: 100%; /* Adjust image width to 100% */
+    height: auto; /* Adjust image height to auto */
+  }
 }
 
 /* Smooth scrolling */
@@ -619,6 +634,24 @@ header .mobile-nav {
   outline: none;
 }
 
+.contact .container .content .contact-form button {
+  cursor: pointer;
+  padding: 12px 24px;
+  background-color: #ffffff; /* Change to your preferred color */
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .container .content .contact-form button:hover {
+  background-color: #ffffff; /* Darker shade for hover effect */
+ 
+}
+
+
 footer {
   display: flex;
   align-items: center;
@@ -872,6 +905,22 @@ footer .container .link-container .navigation ul li a {
   footer .container .link-container .navigation ul li::after {
     width: 60%;
   }
+
+  .about .container .content .about-me .profile .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #191919;
+    border-radius: 16px;
+    width: 100%; /* Adjust width to 100% */
+    height: auto; /* Adjust height to auto */
+    gap: 20px;
+  }
+  .about .container .content .about-me .profile .image-box img {
+    width: 100%; /* Adjust image width to 100% */
+    height: auto; /* Adjust image height to auto */
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -895,6 +944,22 @@ footer .container .link-container .navigation ul li a {
   footer .container .link-container .resource ul li::after,
   footer .container .link-container .navigation ul li::after {
     width: 100%;
+  }
+
+  .about .container .content .about-me .profile .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #191919;
+    border-radius: 16px;
+    width: 100%; /* Adjust width to 100% */
+    height: auto; /* Adjust height to auto */
+    gap: 20px;
+  }
+  .about .container .content .about-me .profile .image-box img {
+    width: 100%; /* Adjust image width to 100% */
+    height: auto; /* Adjust image height to auto */
   }
 }
 
@@ -1013,11 +1078,16 @@ footer .container .link-container .navigation ul li a {
     padding: 8px;
     background-color: #191919;
     border-radius: 16px;
-    width: 75%;
-    height: 25vh;
+    width: 100%; /* Adjust width to 100% */
+    height: auto; /* Adjust height to auto */
     gap: 20px;
   }
   
+  .about .container .content .about-me .profile .image-box img {
+    width: 100%; /* Adjust image width to 100% */
+    height: auto; /* Adjust image height to auto */
+  }
+
   .about .container .content .about-me .description .name-role {
     display: flex;
     flex-direction: column;
@@ -1176,9 +1246,14 @@ footer .container .link-container .navigation ul li a {
     padding: 8px;
     background-color: #191919;
     border-radius: 16px;
-    width: 75%;
-    height: 25vh;
+    width: 100%; /* Adjust width to 100% */
+    height: auto; /* Adjust height to auto */
     gap: 20px;
+  }
+  
+  .about .container .content .about-me .profile .image-box img {
+    width: 100%; /* Adjust image width to 100% */
+    height: auto; /* Adjust image height to auto */
   }
   
   .about .container .content .about-me .description .name-role {
@@ -1434,4 +1509,130 @@ footer .container .link-container .navigation ul li a {
 
 @media screen and (max-width: 450px) {    /* Optional: Adjustments for small phones */
 
+}
+
+@media screen and (max-width: 320px) { /* Styles for iPhone 5 */
+  .container {
+    padding: 1rem;
+  }
+
+  .hero .container .content svg text {
+    font-size: 48px; /* Adjust font size for smaller screens */
+  }
+
+  .hero .container .content h1 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+
+  .hero .container .content button {
+    width: 10em;
+    height: 3em;
+    font-size: 10px;
+  }
+
+  .hero .container .content button span {
+    width: 6em;
+    height: 2em;
+    font-size: 1em;
+  }
+
+  .about .container .content .about-me {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .about .container .content .about-me .profile,
+  .about .container .content .about-me .description {
+    width: 100%;
+  }
+
+  .about .container .content .about-me .profile .image-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .about .container .content .about-me .profile .image-box img {
+    width: 100%;
+  }
+
+  .about .container .content .about-me .description .name-role h1 {
+    font-size: 1.5rem;
+  }
+
+  .about .container .content .about-me .description .name-role .role h2 {
+    font-size: 1rem;
+  }
+
+  .about .container .content .about-me .description p {
+    font-size: 0.9rem;
+  }
+
+  .skill .container .content .skills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+
+  .skill .container .content .skills .skill-box {
+    height: 80px;
+  }
+
+  .project .container .content .projects {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .project .container .content .projects .card {
+    height: auto;
+  }
+
+  .project .container .content .projects .card img {
+    height: auto;
+  }
+
+  .project .container .content .projects .card .description h1 {
+    font-size: 1.2rem;
+  }
+
+  .project .container .content .projects .card .description p {
+    font-size: 0.9rem;
+  }
+
+  .project .container .content .projects .card .description .action button {
+    width: 48%;
+    font-size: 0.8rem;
+  }
+
+  .contact .container .content .contact-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact .container .content .contact-form .input input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .contact .container .content .contact-form textarea {
+    height: 200px;
+  }
+
+  footer .container {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  footer .container .profile,
+  footer .container .link-container {
+    width: 100%;
+  }
+
+  footer .container .link-container .information,
+  footer .container .link-container .resource,
+  footer .container .link-container .navigation {
+    width: 100%;
+  }
 }
