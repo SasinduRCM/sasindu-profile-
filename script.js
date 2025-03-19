@@ -17,10 +17,26 @@ navLink.forEach((link) => {
   });
 });
 
-  var typed = new Typed(".type", {
-    strings: ["Programmer.", "Web Developer.", "Front-End Developer.","Back-End Developer.","Freelancer"],
-    typeSpeed: 60,
-    backSpeed: 60,
-    loop: true,
-  });
+var typed = new Typed(".type", {
+  strings: ["Programmer.", "Web Developer.", "Front-End Developer.","Back-End Developer.","Freelancer"],
+  typeSpeed: 60,
+  backSpeed: 60,
+  loop: true,
+});
+
+
+(function() {
+  emailjs.init("rcm@123@sasi"); // Replace with your EmailJS user ID
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm('rcm@123@sasi', 'rcm@123@sasi', this)
+    .then(function() {
+      alert('Message sent successfully!');
+    }, function(error) {
+      alert('Failed to send message. Please try again later.');
+    });
+});
 
